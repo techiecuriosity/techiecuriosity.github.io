@@ -734,58 +734,24 @@ h1 {
 
 /* Ad Container Styles */
 .ad-container {
-    margin: 2rem 0;
-    padding: 1rem;
-    background: var(--card-bg);
-    border-radius: var(--border-radius);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin: 20px auto;
+    max-width: 100%;
     text-align: center;
-    overflow: hidden;
-    position: relative;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
 }
 
-.ad-container::before {
-    content: 'Advertisement';
+.ad-container ins {
     display: block;
-    font-size: 0.8rem;
-    color: #999;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    margin: 0 auto;
 }
 
-.ad-horizontal {
-    min-height: 100px;
-    width: 100%;
-}
-
-.ad-vertical {
-    min-height: 600px;
-    width: 300px;
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-/* Responsive Ad Adjustments */
-@media (max-width: 1200px) {
-    .ad-vertical {
-        display: none;
-    }
-}
-
+/* Responsive Ad Styles */
 @media (max-width: 768px) {
-    .ad-horizontal {
-        margin: 1rem 0;
-        min-height: 80px;
-    }
-}
-
-/* Hide ads when printing */
-@media print {
     .ad-container {
-        display: none;
+        margin: 15px auto;
+        padding: 5px;
     }
 }
 
