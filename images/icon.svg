@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="256" cy="256" r="256" fill="#ffffff"/>
+    
+    <!-- Outer Ring -->
+    <circle cx="256" cy="256" r="240" fill="none" stroke="#3498db" stroke-width="8"/>
+    
+    <!-- Three interlocking circles representing the doshas -->
+    <g opacity="0.8">
+        <!-- Vata (Purple) -->
+        <circle cx="200" cy="200" r="120" fill="#9b59b6" />
+        
+        <!-- Pitta (Red) -->
+        <circle cx="312" cy="200" r="120" fill="#e74c3c" />
+        
+        <!-- Kapha (Green) -->
+        <circle cx="256" cy="312" r="120" fill="#2ecc71" />
+    </g>
+    
+    <!-- Center Mandala -->
+    <circle cx="256" cy="256" r="60" fill="#ffffff" stroke="#34495e" stroke-width="4"/>
+    <path d="M256,196 L256,316 M196,256 L316,256" stroke="#34495e" stroke-width="4"/>
+</svg> 

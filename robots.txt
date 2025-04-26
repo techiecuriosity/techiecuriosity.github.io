@@ -1,0 +1,35 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://techiecuriosity.github.io/dosha-quiz/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 1
+
+# Additional rules for specific bots
+User-agent: Googlebot
+Allow: /
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Block certain directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/ 

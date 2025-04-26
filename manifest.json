@@ -1,0 +1,29 @@
+{
+    "name": "Dosha Quiz",
+    "short_name": "Dosha Quiz",
+    "description": "Discover your Ayurvedic body type with our comprehensive dosha quiz",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#f5f7fa",
+    "theme_color": "#3498db",
+    "icons": [
+        {
+            "src": "images/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["health", "wellness", "lifestyle"],
+    "screenshots": [
+        {
+            "src": "https://raw.githubusercontent.com/techiecuriosity/dosha-quiz/main/images/screenshot1.png",
+            "sizes": "1280x720",
+            "type": "image/png"
+        }
+    ]
+} 
