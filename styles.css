@@ -268,10 +268,17 @@ body {
 }
 
 /* Results Screen */
-.results-content {
-    max-width: 1000px;
-    margin: 0 auto;
+.results-screen {
+    display: none;
     padding: 2rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.results-screen.active {
+    display: block;
+    opacity: 1;
 }
 
 .results-grid {
@@ -459,7 +466,7 @@ footer {
         padding: 0;
     }
     
-    .results-content {
+    .results-screen {
         padding: 0;
     }
 }
@@ -483,8 +490,7 @@ footer {
     }
     
     .testimonial-grid,
-    .faq-grid,
-    .contact-info {
+    .faq-grid {
         grid-template-columns: 1fr;
     }
     
