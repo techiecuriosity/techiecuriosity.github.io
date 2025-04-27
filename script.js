@@ -596,20 +596,16 @@ window.addEventListener('error', (event) => {
 // Initialize
 document.addEventListener('DOMContentLoaded', initQuiz);
 
-// Initialize AdSense ads
+// Initialize AdSense
 function initializeAds() {
-    // Push all ad units
-    (adsbygoogle = window.adsbygoogle || []).push({});
-    
-    // Refresh ads on page transitions
-    document.addEventListener('visibilitychange', function() {
-        if (!document.hidden) {
-            // Refresh ads when page becomes visible
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        }
-    });
+    // Only initialize ads if they haven't been initialized before
+    if (!window.adsInitialized) {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        window.adsInitialized = true;
+    }
 }
 
+// Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
     initializeAds();
 }); 
