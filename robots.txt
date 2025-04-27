@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://techiecuriosity.github.io/dosha-quiz/sitemap.xml
+Sitemap: https://techiecuriosity.github.io/sitemap.xml
 
 # Crawl-delay for all bots
 Crawl-delay: 1
@@ -32,4 +32,5 @@ Crawl-delay: 2
 # Block certain directories
 Disallow: /cgi-bin/
 Disallow: /tmp/
-Disallow: /private/ 
+Disallow: /private/
+Disallow: /admin/ 
