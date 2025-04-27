@@ -78,10 +78,10 @@
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508182002579598" crossorigin="anonymous"></script>
     <script>
-        // Initialize AdSense after the script loads
-        window.onload = function() {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        };
+        // Remove any existing AdSense initialization
+        window.adsbygoogle = window.adsbygoogle || [];
+        // Initialize ads only once when the script loads
+        (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 </head>
 <body>
@@ -142,7 +142,7 @@
                     Start Quiz
                 </button>
                 
-                <!-- AdSense Ad -->
+                <!-- Ad Container 1 -->
                 <div class="ad-container">
                     <ins class="adsbygoogle"
                          style="display:block"
@@ -150,9 +150,6 @@
                          data-ad-slot="1234567890"
                          data-ad-format="auto"
                          data-full-width-responsive="true"></ins>
-                    <script>
-                         (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
             </div>
         </section>
@@ -341,7 +338,7 @@
                 <a href="/privacy-policy">Privacy Policy</a>
             </nav>
             
-            <!-- AdSense Ad -->
+            <!-- Ad Container 2 -->
             <div class="ad-container">
                 <ins class="adsbygoogle"
                      style="display:block"
@@ -349,9 +346,6 @@
                      data-ad-slot="2468135790"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
-                <script>
-                     (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
             </div>
             
             <p class="copyright">© 2024 Ayurvedic Dosha Quiz. All rights reserved.</p>
