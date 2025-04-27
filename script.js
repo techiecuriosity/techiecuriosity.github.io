@@ -600,8 +600,16 @@ document.addEventListener('DOMContentLoaded', initQuiz);
 function initializeAds() {
     // Only initialize ads if they haven't been initialized before
     if (!window.adsInitialized) {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        window.adsInitialized = true;
+        // Wait for DOM to be fully loaded
+        if (document.readyState === 'complete') {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            window.adsInitialized = true;
+        } else {
+            window.addEventListener('load', function() {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                window.adsInitialized = true;
+            });
+        }
     }
 }
 
