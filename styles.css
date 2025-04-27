@@ -352,7 +352,6 @@ body {
 .testimonials {
     background: white;
     padding: 4rem 2rem;
-    margin-top: 4rem;
 }
 
 .testimonial-grid {
@@ -364,10 +363,10 @@ body {
 }
 
 .testimonial {
-    background: var(--background-color);
+    background: var(--light-bg);
     padding: 2rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-content {
@@ -406,31 +405,6 @@ body {
     padding: 2rem;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-}
-
-/* Contact Section */
-.contact {
-    background: white;
-    padding: 4rem 2rem;
-}
-
-.contact-info {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.contact-item i {
-    font-size: 1.5rem;
-    color: var(--primary-color);
 }
 
 /* Footer */
