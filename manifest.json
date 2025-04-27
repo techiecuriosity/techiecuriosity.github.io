@@ -2,7 +2,7 @@
     "name": "Dosha Quiz",
     "short_name": "Dosha Quiz",
     "description": "Discover your Ayurvedic body type with our comprehensive dosha quiz",
-    "start_url": "./index.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#f5f7fa",
     "theme_color": "#3498db",
@@ -21,7 +21,7 @@
     "categories": ["health", "wellness", "lifestyle"],
     "screenshots": [
         {
-            "src": "https://raw.githubusercontent.com/techiecuriosity/dosha-quiz/main/images/screenshot1.png",
+            "src": "images/screenshot1.png",
             "sizes": "1280x720",
             "type": "image/png"
         }
