@@ -78,10 +78,12 @@
     <!-- AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6508182002579598" crossorigin="anonymous"></script>
     <script>
-        // Remove any existing AdSense initialization
+        // Initialize AdSense
         window.adsbygoogle = window.adsbygoogle || [];
-        // Initialize ads only once when the script loads
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        window.adsbygoogle.push({
+            google_ad_client: "ca-pub-6508182002579598",
+            enable_page_level_ads: true
+        });
     </script>
 </head>
 <body>
