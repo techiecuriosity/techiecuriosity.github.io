@@ -593,27 +593,7 @@ window.addEventListener('error', (event) => {
     alert('An error occurred. Please try again later.');
 });
 
-// Initialize
-document.addEventListener('DOMContentLoaded', initQuiz);
-
-// Initialize AdSense
-function initializeAds() {
-    // Only initialize ads if they haven't been initialized before
-    if (!window.adsInitialized) {
-        // Wait for DOM to be fully loaded
-        if (document.readyState === 'complete') {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            window.adsInitialized = true;
-        } else {
-            window.addEventListener('load', function() {
-                (adsbygoogle = window.adsbygoogle || []).push({});
-                window.adsInitialized = true;
-            });
-        }
-    }
-}
-
 // Initialize everything when the DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    initializeAds();
+    initQuiz();
 }); 
