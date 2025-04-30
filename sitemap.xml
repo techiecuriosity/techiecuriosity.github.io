@@ -1,63 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
-        <loc>https://techiecuriosity.github.io/</loc>
-        <lastmod>2024-03-19</lastmod>
+        <loc>https://ayurveda.github.io/</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://raw.githubusercontent.com/techiecuriosity/techiecuriosity.github.io/main/images/icon-512.png</image:loc>
+            <image:loc>https://raw.githubusercontent.com/ayurveda/ayurveda.github.io/main/images/icon-512.png</image:loc>
             <image:title>Dosha Quiz Logo</image:title>
             <image:caption>Discover your Ayurvedic body type with our comprehensive dosha quiz</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://raw.githubusercontent.com/techiecuriosity/techiecuriosity.github.io/main/images/vata-dosha.png</image:loc>
+            <image:loc>https://raw.githubusercontent.com/ayurveda/ayurveda.github.io/main/images/vata-dosha.png</image:loc>
             <image:title>Vata Dosha Characteristics</image:title>
             <image:caption>Learn about Vata dosha characteristics and traits</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://raw.githubusercontent.com/techiecuriosity/techiecuriosity.github.io/main/images/pitta-dosha.png</image:loc>
+            <image:loc>https://raw.githubusercontent.com/ayurveda/ayurveda.github.io/main/images/pitta-dosha.png</image:loc>
             <image:title>Pitta Dosha Characteristics</image:title>
             <image:caption>Learn about Pitta dosha characteristics and traits</image:caption>
         </image:image>
         <image:image>
-            <image:loc>https://raw.githubusercontent.com/techiecuriosity/techiecuriosity.github.io/main/images/kapha-dosha.png</image:loc>
+            <image:loc>https://raw.githubusercontent.com/ayurveda/ayurveda.github.io/main/images/kapha-dosha.png</image:loc>
             <image:title>Kapha Dosha Characteristics</image:title>
             <image:caption>Learn about Kapha dosha characteristics and traits</image:caption>
         </image:image>
     </url>
     <url>
-        <loc>https://techiecuriosity.github.io/about-ayurveda</loc>
-        <lastmod>2024-03-19</lastmod>
+        <loc>https://ayurveda.github.io/about-ayurveda</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://techiecuriosity.github.io/dosha-types</loc>
-        <lastmod>2024-03-19</lastmod>
+        <loc>https://ayurveda.github.io/dosha-types</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://techiecuriosity.github.io/faq</loc>
-        <lastmod>2024-03-19</lastmod>
+        <loc>https://ayurveda.github.io/faq</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://techiecuriosity.github.io/privacy-policy.html</loc>
-        <lastmod>2024-04-27</lastmod>
+        <loc>https://ayurveda.github.io/privacy-policy.html</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://techiecuriosity.github.io/dosha-quiz/ads.txt</loc>
-        <lastmod>2024-03-19</lastmod>
+        <loc>https://ayurveda.github.io/ads.txt</loc>
+        <lastmod>2024-04-30</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.1</priority>
+        <priority>0.3</priority>
     </url>
 </urlset> 

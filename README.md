@@ -1,6 +1,6 @@
-# Dosha Quiz
+# Ayurvedic Dosha Quiz
 
-A comprehensive Ayurvedic body type (Dosha) quiz application that helps users discover their unique constitution based on ancient Ayurvedic principles.
+A modern, interactive quiz to help you discover your Ayurvedic dosha type.
 
 ## Features
 
@@ -13,7 +13,7 @@ A comprehensive Ayurvedic body type (Dosha) quiz application that helps users di
 
 ## Live Demo
 
-[View Live Demo](https://techiecuriosity.github.io/dosha-quiz)
+[View Live Demo](https://ayurveda.github.io)
 
 ## Getting Started
 
