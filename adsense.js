@@ -22,8 +22,10 @@
         
         // Check if each element has already been initialized
         for (let i = 0; i < adElements.length; i++) {
+            const status = adElements[i].getAttribute('data-adsbygoogle-status');
             // AdSense adds a 'data-adsbygoogle-status' attribute when ads are loaded
-            if (adElements[i].getAttribute('data-adsbygoogle-status') !== 'done') {
+            // Status can be 'done', 'filled', or undefined
+            if (!status || (status !== 'done' && status !== 'filled')) {
                 return false;
             }
         }
@@ -38,9 +40,22 @@
         }
         
         try {
+            // Check if this specific ad slot is already filled
+            const status = adElement.getAttribute('data-adsbygoogle-status');
+            if (status === 'done' || status === 'filled') {
+                console.log('Ad slot already filled, skipping initialization');
+                return;
+            }
+            
             (window.adsbygoogle = window.adsbygoogle || []).push({});
             console.log(`Ad slot initialized successfully (attempt ${retryCount + 1})`);
         } catch (error) {
+            // Check if the error is about all slots being filled
+            if (error.message && error.message.includes('already have ads in them')) {
+                console.log('All ad slots are already filled, skipping initialization');
+                return;
+            }
+            
             console.error(`Error initializing ad slot (attempt ${retryCount + 1}):`, error);
             
             // Schedule a retry with exponential backoff
@@ -68,7 +83,7 @@
                     console.log('AdSense already loaded, only initializing unfilled ad slots');
                     
                     // Find all ad slots that haven't been filled yet
-                    const uninitializedAds = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status="done"])');
+                    const uninitializedAds = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status="done"]):not([data-adsbygoogle-status="filled"])');
                     
                     if (uninitializedAds.length > 0) {
                         console.log(`Found ${uninitializedAds.length} uninitialized ad slots, initializing them`);
@@ -77,6 +92,8 @@
                         uninitializedAds.forEach(adElement => {
                             initializeAdSlot(adElement);
                         });
+                    } else {
+                        console.log('No uninitialized ad slots found');
                     }
                     return;
                 }
@@ -95,7 +112,7 @@
                         window.adsbygoogle = window.adsbygoogle || [];
                         
                         // Find all ad slots that haven't been filled yet
-                        const uninitializedAds = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status="done"])');
+                        const uninitializedAds = document.querySelectorAll('ins.adsbygoogle:not([data-adsbygoogle-status="done"]):not([data-adsbygoogle-status="filled"])');
                         
                         if (uninitializedAds.length > 0) {
                             console.log(`Found ${uninitializedAds.length} uninitialized ad slots, initializing them`);
